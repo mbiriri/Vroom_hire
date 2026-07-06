@@ -1,0 +1,63 @@
+.navbar {
+  background: rgba(0, 0, 0, 0.5);   /* was likely a solid color */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  position: fixed;                  /* stays at top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;                      /* above video and page content */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;              /* Vertically aligns standard links and dropdown container */
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+/* --- DROPDOWN CONTAINER --- */
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* You can add specific margins or padding here if needed */
+}
+
+/* --- DROPDOWN ELEMENT --- */
+.nav-dropdown {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.nav-dropdown:hover {
+  color: orange;
+  border-color: orange;
+}
+
+.nav-dropdown option {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
